@@ -2,6 +2,7 @@ from search.binarySearch import BinarySearch
 from generators.power_set.exponential import PowerSetExponential
 from sort.selectionSort import SelectionSort
 from sort.mergeSort import MergeSort
+from hashTables.hashTable import HashTable
 
 
 def test_algorithms(algorithm_classes):
@@ -16,7 +17,8 @@ if __name__ == '__main__':
             BinarySearch,
             PowerSetExponential,
             SelectionSort,
-            MergeSort
+            MergeSort,
+            HashTable
         ]
     )
 
