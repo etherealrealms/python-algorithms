@@ -3,6 +3,7 @@ from generators.power_set.exponential import PowerSetExponential
 from sort.selectionSort import SelectionSort
 from sort.mergeSort import MergeSort
 from hashTables.hashTable import HashTable
+from dynamic.fibonacci import Fibonacci
 
 
 def test_algorithms(algorithm_classes):
@@ -18,7 +19,8 @@ if __name__ == '__main__':
             PowerSetExponential,
             SelectionSort,
             MergeSort,
-            HashTable
+            HashTable,
+            Fibonacci
         ]
     )
 
