@@ -1,5 +1,5 @@
 from algorithm.Algorithm import Algorithm
-from .data_structure.undirected import UndirectedGraph
+from .data_structure.directed import DirectedGraph
 
 
 class BreadthFirstSearch(Algorithm):

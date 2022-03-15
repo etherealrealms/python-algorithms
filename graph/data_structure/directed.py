@@ -1,9 +1,18 @@
 from .edge import Edge
+from .node import Node
+
 
 class DirectedGraph(object):
-    def __init__(self):
+    def __init__(self, nodes=[], edges=[]):
         self._nodes = {}
+        self._node_name_lookup = {}
         self._edges = {}
+
+        for node_name in nodes:
+            self.add_node(Node(node_name))
+
+        for (source_node_name, target_node_name) in edges:
+            self.add_edge(Edge(self.get_node_with_name(source_node_name), self.get_node_with_name(target_node_name)))
 
     def has_node(self, node):
         return not self._nodes.get(node.get_id) is None
@@ -11,6 +20,7 @@ class DirectedGraph(object):
     def add_node(self, node):
         node_id = node.get_id()
         self._nodes[node_id] = node
+        self._node_name_lookup[node.get_name()] = node
 
         if self._edges.get(node_id) is None:
             self._edges[node_id] = []
@@ -29,6 +39,9 @@ class DirectedGraph(object):
 
     def get_node_with_id(self, node_id):
         return self._nodes.get(node_id)
+
+    def get_node_with_name(self, name):
+        return self._node_name_lookup.get(name)
 
     def get_direct_children_of_node(self, node):
         node_children = []

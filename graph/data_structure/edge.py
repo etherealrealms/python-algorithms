@@ -21,4 +21,4 @@ class Edge(object):
         return self._weight
     
     def __str__(self):
-        return f'{{{str(self.get_source_node())} ---weight [id: {self.get_id()}]: {self.get_weight()}---> {str(self.get_destination_node())}}}'
+        return f'{{{str(self.get_source_node())} ---weight [id: {self.get_id()}]: {self.get_weight()}---> {str(self.get_destination_node())}}}\n'

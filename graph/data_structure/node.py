@@ -13,4 +13,4 @@ class Node(object):
         return self._name
 
     def __str__(self):
-        return f'[Node (id: {self.get_id}): {self.get_name()}]'
+        return f'[Node (id: {self.get_id()}): {self.get_name()}]'

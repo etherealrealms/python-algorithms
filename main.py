@@ -4,6 +4,7 @@ from sort.selectionSort import SelectionSort
 from sort.mergeSort import MergeSort
 from hashTables.hashTable import HashTable
 from dynamic.fibonacci import Fibonacci
+from graph.dfs import DepthFirstSearch
 
 
 def test_algorithms(algorithm_classes):
@@ -20,7 +21,8 @@ if __name__ == '__main__':
             SelectionSort,
             MergeSort,
             HashTable,
-            Fibonacci
+            Fibonacci,
+            DepthFirstSearch
         ]
     )
 
