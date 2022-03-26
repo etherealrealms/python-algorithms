@@ -7,6 +7,8 @@ from dynamic.fibonacci import Fibonacci
 from graph.dfs import DepthFirstSearch
 from graph.bfs import BreadthFirstSearch
 
+from simulation.simulationRunner import SimulationRunner
+
 
 def test_algorithms(algorithm_classes):
     for algorithm_class in algorithm_classes:
@@ -24,7 +26,8 @@ if __name__ == '__main__':
             HashTable,
             Fibonacci,
             DepthFirstSearch,
-            BreadthFirstSearch
+            BreadthFirstSearch,
+            SimulationRunner
         ]
     )
 
