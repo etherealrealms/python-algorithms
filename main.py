@@ -7,6 +7,7 @@ from dynamic.fibonacci import Fibonacci
 from graph.dfs import DepthFirstSearch
 from graph.bfs import BreadthFirstSearch
 from graph.binaryTree import BinaryTree
+from graph.heap import Heap
 
 from simulation.simulationRunner import SimulationRunner
 
@@ -30,6 +31,7 @@ if __name__ == '__main__':
             BreadthFirstSearch,
             SimulationRunner,
             BinaryTree,
+            Heap,
         ]
     )
 
