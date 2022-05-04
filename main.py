@@ -6,6 +6,7 @@ from hashTables.hashTable import HashTable
 from dynamic.fibonacci import Fibonacci
 from graph.dfs import DepthFirstSearch
 from graph.bfs import BreadthFirstSearch
+from graph.binaryTree import BinaryTree
 
 from simulation.simulationRunner import SimulationRunner
 
@@ -27,7 +28,8 @@ if __name__ == '__main__':
             Fibonacci,
             DepthFirstSearch,
             BreadthFirstSearch,
-            SimulationRunner
+            SimulationRunner,
+            BinaryTree,
         ]
     )
 
